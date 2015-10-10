@@ -19,6 +19,15 @@
                         <field name="NUM">56</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="oled_cleardisplay" id="414">
+                        <next>
+                          <block type="oled_drawtext" id="432">
+                            <field name="TEXT">octogon</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -27,18 +36,5 @@
         </next>
       </block>
     </next>
-  </block>
-  <block type="procedures_defnoreturn" id="384" x="-176" y="25">
-    <mutation></mutation>
-    <field name="NAME">hi my name is jeff</field>
-    <statement name="STACK">
-      <block type="expansion_elevation" id="390" inline="true">
-        <value name="NUMBER">
-          <block type="math_number" id="397">
-            <field name="NUM">15</field>
-          </block>
-        </value>
-      </block>
-    </statement>
   </block>
 </xml>
