@@ -1,57 +1,60 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="304" x="-171" y="-124">
-    <next>
-      <block type="robot_delay" id="465" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="475">
-            <field name="NUM">1500</field>
-          </block>
-        </value>
+  <block type="controls_repeat" id="628" inline="true" x="-195" y="-158">
+    <value name="TIMES">
+      <block type="math_number" id="635">
+        <field name="NUM">5</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="304">
         <next>
-          <block type="movement_reverse" id="314">
+          <block type="robot_delay" id="465" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="475">
+                <field name="NUM">1500</field>
+              </block>
+            </value>
             <next>
-              <block type="movement_leftmotor" id="331" inline="true">
-                <value name="MOVLEFT">
-                  <block type="math_number" id="338">
-                    <field name="NUM">12</field>
-                  </block>
-                </value>
+              <block type="movement_reverse" id="314">
                 <next>
-                  <block type="robot_delay" id="477" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="484">
-                        <field name="NUM">2000</field>
+                  <block type="movement_leftmotor" id="331" inline="true">
+                    <value name="MOVLEFT">
+                      <block type="math_number" id="338">
+                        <field name="NUM">12</field>
                       </block>
                     </value>
                     <next>
-                      <block type="oled_linerect" id="347">
-                        <field name="OBJECT">RECT</field>
+                      <block type="robot_delay" id="477" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="484">
+                            <field name="NUM">2000</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="movement_rightmotor" id="366" inline="true">
-                            <value name="MOVRIGHT">
-                              <block type="math_number" id="373">
-                                <field name="NUM">56</field>
-                              </block>
-                            </value>
+                          <block type="oled_linerect" id="347">
+                            <field name="OBJECT">RECT</field>
                             <next>
-                              <block type="oled_cleardisplay" id="574">
+                              <block type="movement_rightmotor" id="366" inline="true">
+                                <value name="MOVRIGHT">
+                                  <block type="math_number" id="373">
+                                    <field name="NUM">56</field>
+                                  </block>
+                                </value>
                                 <next>
-                                  <block type="oled_drawtext" id="432">
-                                    <field name="TEXT">Hello Jeff!!</field>
+                                  <block type="oled_cleardisplay" id="574">
                                     <next>
-                                      <block type="movement_stutter" id="540">
+                                      <block type="oled_color" id="530">
+                                        <field name="OBJECT">GREEN</field>
                                         <next>
-                                          <block type="oled_color" id="530">
-                                            <field name="OBJECT">GREEN</field>
-                                            <next>
-                                              <block type="led_select" id="614" inline="true">
-                                                <field name="ACTION">FLASH</field>
-                                                <value name="LED">
-                                                  <block type="math_number" id="621">
-                                                    <field name="NUM">1000</field>
-                                                  </block>
-                                                </value>
+                                          <block type="led_select" id="614" inline="true">
+                                            <field name="ACTION">FLASH</field>
+                                            <value name="LED">
+                                              <block type="math_number" id="621">
+                                                <field name="NUM">1000</field>
                                               </block>
+                                            </value>
+                                            <next>
+                                              <block type="movement_stop" id="645"></block>
                                             </next>
                                           </block>
                                         </next>
@@ -72,6 +75,6 @@
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
