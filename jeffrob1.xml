@@ -1,12 +1,4 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="131" inline="true" x="-45" y="-48">
-    <field name="VAR">item</field>
-    <value name="VALUE">
-      <block type="math_number" id="138">
-        <field name="NUM">0</field>
-      </block>
-    </value>
-  </block>
   <block type="controls_whileUntil" id="20" inline="false" x="-60" y="31">
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
