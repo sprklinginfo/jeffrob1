@@ -20,10 +20,15 @@
                       </block>
                     </value>
                     <next>
-                      <block type="oled_cleardisplay" id="414">
+                      <block type="oled_drawtext" id="432">
+                        <field name="TEXT">Hello Jeff!!</field>
                         <next>
-                          <block type="oled_drawtext" id="432">
-                            <field name="TEXT">Hello Jeff!!</field>
+                          <block type="expansion_elevation" id="438" inline="true">
+                            <value name="NUMBER">
+                              <block type="math_number" id="463">
+                                <field name="NUM">15</field>
+                              </block>
+                            </value>
                           </block>
                         </next>
                       </block>
