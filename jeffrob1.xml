@@ -9,7 +9,66 @@
     <next>
       <block type="controls_whileUntil" id="162" inline="false">
         <field name="MODE">WHILE</field>
+        <value name="NUMBER">
+          <block type="math_arithmetic" id="179" inline="true">
+            <field name="OP">MINUS</field>
+            <value name="A">
+              <block type="variables_get" id="172">
+                <field name="VAR">i</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="186">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_forward" id="196">
+            <next>
+              <block type="robot_delay" id="199" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="206">
+                    <field name="NUM">2000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_reverse" id="216">
+                    <next>
+                      <block type="movement_forward" id="226">
+                        <next>
+                          <block type="robot_delay" id="228" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="242">
+                                <field name="NUM">3000</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_left" id="252">
+                                <next>
+                                  <block type="movement_forward" id="262">
+                                    <next>
+                                      <block type="movement_stop" id="272"></block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
       </block>
     </next>
+  </block>
+  <block type="math_number" id="235" x="-109" y="-24">
+    <field name="NUM">0</field>
   </block>
 </xml>
