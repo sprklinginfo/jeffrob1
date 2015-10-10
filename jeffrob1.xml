@@ -23,7 +23,7 @@
                       <block type="oled_cleardisplay" id="414">
                         <next>
                           <block type="oled_drawtext" id="432">
-                            <field name="TEXT">octogon</field>
+                            <field name="TEXT">Hello Jeff!!</field>
                           </block>
                         </next>
                       </block>
