@@ -9,6 +9,20 @@
                 <field name="NUM">12</field>
               </block>
             </value>
+            <next>
+              <block type="oled_linerect" id="347">
+                <field name="OBJECT">RECT</field>
+                <next>
+                  <block type="movement_rightmotor" id="366" inline="true">
+                    <value name="MOVRIGHT">
+                      <block type="math_number" id="373">
+                        <field name="NUM">56</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
