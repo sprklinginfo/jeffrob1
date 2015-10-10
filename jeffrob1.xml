@@ -1,45 +1,15 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="20" inline="false" x="-60" y="31">
-    <field name="MODE">WHILE</field>
-    <value name="NUMBER">
-      <block type="math_arithmetic" id="102" inline="true">
-        <field name="OP">MINUS</field>
-        <value name="A">
-          <block type="math_number" id="115">
-            <field name="NUM">20</field>
-          </block>
-        </value>
-        <value name="B">
-          <block type="math_number" id="129">
-            <field name="NUM">0</field>
-          </block>
-        </value>
+  <block type="variables_set" id="148" inline="true" x="-209" y="-158">
+    <field name="VAR">i</field>
+    <value name="VALUE">
+      <block type="math_number" id="155">
+        <field name="NUM">5</field>
       </block>
     </value>
-    <statement name="DO">
-      <block type="movement_forward" id="30">
-        <next>
-          <block type="robot_delay" id="56" inline="true">
-            <value name="DELAY">
-              <block type="math_random" id="63"></block>
-            </value>
-            <next>
-              <block type="movement_right" id="42">
-                <next>
-                  <block type="robot_delay" id="32" inline="true">
-                    <value name="DELAY">
-                      <block type="math_random" id="70"></block>
-                    </value>
-                    <next>
-                      <block type="movement_stop" id="80"></block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
+    <next>
+      <block type="controls_whileUntil" id="162" inline="false">
+        <field name="MODE">WHILE</field>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
