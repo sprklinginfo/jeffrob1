@@ -43,18 +43,37 @@
                                 <next>
                                   <block type="oled_cleardisplay" id="574">
                                     <next>
-                                      <block type="oled_color" id="530">
-                                        <field name="OBJECT">GREEN</field>
+                                      <block type="oled_setcursor" id="660" inline="true">
+                                        <value name="STARTX">
+                                          <block type="math_number" id="667">
+                                            <field name="NUM">10</field>
+                                          </block>
+                                        </value>
+                                        <value name="STARTY">
+                                          <block type="math_number" id="674">
+                                            <field name="NUM">30</field>
+                                          </block>
+                                        </value>
                                         <next>
-                                          <block type="led_select" id="614" inline="true">
-                                            <field name="ACTION">FLASH</field>
-                                            <value name="LED">
-                                              <block type="math_number" id="621">
-                                                <field name="NUM">1000</field>
-                                              </block>
-                                            </value>
+                                          <block type="oled_color" id="530">
+                                            <field name="OBJECT">GREEN</field>
                                             <next>
-                                              <block type="movement_stop" id="645"></block>
+                                              <block type="oled_drawtext" id="683">
+                                                <field name="TEXT">Hello Jeff</field>
+                                                <next>
+                                                  <block type="led_select" id="614" inline="true">
+                                                    <field name="ACTION">FLASH</field>
+                                                    <value name="LED">
+                                                      <block type="math_number" id="621">
+                                                        <field name="NUM">1000</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="movement_stop" id="645"></block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
                                             </next>
                                           </block>
                                         </next>
