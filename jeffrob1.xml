@@ -1,65 +1,53 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="88" inline="true" collapsed="true" x="-112" y="-6">
+  <block type="variables_set" id="131" inline="true" x="-45" y="-48">
     <field name="VAR">item</field>
     <value name="VALUE">
-      <block type="math_number" id="95">
-        <field name="NUM">10</field>
+      <block type="math_number" id="138">
+        <field name="NUM">0</field>
       </block>
     </value>
-    <next>
-      <block type="controls_whileUntil" id="20" inline="false">
-        <field name="MODE">WHILE</field>
-        <value name="NUMBER">
-          <block type="math_arithmetic" id="102" inline="true">
-            <field name="OP">MINUS</field>
-            <value name="A">
-              <block type="math_number" id="115">
-                <field name="NUM">20</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="129">
-                <field name="NUM">0</field>
-              </block>
-            </value>
+  </block>
+  <block type="controls_whileUntil" id="20" inline="false" x="-60" y="31">
+    <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="math_arithmetic" id="102" inline="true">
+        <field name="OP">MINUS</field>
+        <value name="A">
+          <block type="math_number" id="115">
+            <field name="NUM">20</field>
           </block>
         </value>
-        <statement name="DO">
-          <block type="variables_set" id="47" inline="true">
-            <field name="VAR">item</field>
-            <value name="VALUE">
-              <block type="math_number" id="54">
-                <field name="NUM">0</field>
-              </block>
+        <value name="B">
+          <block type="math_number" id="129">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="30">
+        <next>
+          <block type="robot_delay" id="56" inline="true">
+            <value name="DELAY">
+              <block type="math_random" id="63"></block>
             </value>
             <next>
-              <block type="movement_forward" id="30">
+              <block type="movement_right" id="42">
                 <next>
-                  <block type="robot_delay" id="56" inline="true">
+                  <block type="robot_delay" id="32" inline="true">
                     <value name="DELAY">
-                      <block type="math_random" id="63"></block>
+                      <block type="math_random" id="70"></block>
                     </value>
                     <next>
-                      <block type="movement_right" id="42">
-                        <next>
-                          <block type="robot_delay" id="32" inline="true">
-                            <value name="DELAY">
-                              <block type="math_random" id="70"></block>
-                            </value>
-                            <next>
-                              <block type="movement_stop" id="80"></block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
+                      <block type="movement_stop" id="80"></block>
                     </next>
                   </block>
                 </next>
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
